@@ -1,0 +1,41 @@
+@import url('');
+
+body {
+    background-color: rgb(101, 148, 235);
+    margin: 10px;
+}
+h1, h2 {
+    font-family: "", Arial, sans-serif;
+    padding: 10px
+}
+li, p {
+    font-family: "", Verdana, sans-serif;
+}
+ul {
+    padding-bottom: 10px;
+}
+nav {
+    background-color: white;
+}
+header h1 {
+    text-align: center;
+}
+
+h2 {
+    border-bottom: 2px outset;
+    color: rgb(0, 145, 194);
+}
+footer p {
+    text-align: center;
+}
+img {
+    max-width: 100%;
+    max-height: 65%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 3px 3px 5px black;
+}
+footer a {
+    color: white;
+}
