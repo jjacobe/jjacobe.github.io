@@ -1,41 +1,270 @@
+/* Table of Contents
+1.  Imports
+2a. General
+2b. Mobile
+3.  Midsize
+4.  Large
+ */
+
+/* 1. Imports */ 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
 
-body {
-    background-color: rgb(101, 148, 235);
-    margin: 10px;
+/* 2a. General */ 
+nav a {
+    color: black;
+    text-decoration: none;
+    font-size: 2.0em;
+    position: relative;
+    transition: 0.4s;
 }
-h1, h2 {
+nav a:hover {
+    color: rgb(236, 236, 236);
+}
+nav a:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    transition: 0.4s;
+    color: black;
+  }
+
+nav a:hover:after {
+    width: 100%;
+}
+
+/* Index Page */
+
+#home {
+    background-color: rgb(99, 138, 212);
+    margin: 0px;
+}
+
+#home h1, #home h2 {
     font-family: "Inter", Arial, sans-serif;
-    padding: 10px
+    padding: 50px
 }
-li, p {
+#home li, #home p {
     font-family: "Inter", Verdana, sans-serif;
 }
-ul {
-    padding-bottom: 10px;
+#home ul {
+    padding-bottom: 50px;
 }
-nav {
-    background-color: white;
+#home_nav {
+    background-color: rgb(255, 255, 255);
 }
-header h1 {
+#home_header h1 {
     text-align: center;
 }
 
-h2 {
+#home h2 {
     border-bottom: 2px outset;
-    color: rgb(0, 145, 194);
+    color: rgb(0, 0, 0);
+    
 }
-footer p {
+#home footer p {
     text-align: center;
 }
-img {
+#home_img {
     max-width: 100%;
-    max-height: 65%;
+    max-height: 50%;
     display: block;
     margin-left: auto;
     margin-right: auto;
     box-shadow: 3px 3px 5px black;
 }
-footer a {
+#home footer a {
     color: white;
+}
+
+/* Design Principles page*/
+/* Navigation bar */
+#design_nav {
+    background-color: rgb(99, 138, 212);
+    padding: 5px;
+}
+
+#design_nav li {
+    list-style-type: none;
+}
+
+/* Main */
+#design_body {
+    margin: 0;
+    background-color: rgb(99, 138, 212);
+}
+
+#design_body h1, #dp_body h2 {
+    font-family: "Inter";
+}
+
+#design_body p, #dp_body li {
+    font-family: sans-serif;
+}
+
+#design_main {
+    background-color: white;
+    padding: 1em;
+}
+
+#design_body img {
+    max-width: 100%;
+    height: 350px;
+}
+
+.design_principle_card_1 {
+    box-shadow: 3px 3px 5px black;
+    padding: 1em;
+    margin-bottom: 2em;
+    border-radius: 25px;
+    background-color: rgb(99, 138, 212);
+    font-family: "Inter"
+}
+
+.design_principle_card_2 {
+    box-shadow: 3px 3px 5px black;
+    padding: 1em;
+    margin-bottom: 2em;
+    border-radius: 25px;
+    background-color:  rgb(99, 138, 212);
+    font-family: "Inter"
+}
+
+.design_principle_card_3 {
+    box-shadow: 3px 3px 5px black;
+    padding: 1em;
+    margin-bottom: 2em;
+    border-radius: 25px;
+    background-color: rgb(99, 138, 212);
+    font-family: "Inter"
+}
+
+/* Footer */
+#design_footer {
+    text-align: center;
+    background-color: rgb(99, 138, 212);
+    margin: 2em;
+}
+
+/* 2b.*/
+#design_main {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 0;
+    padding: 2em;
+}
+.design_principle_card_1 img {
+    margin: auto;
+    display: block;
+    border: 1px solid black;
+    height: 800px;
+}
+.design_principle_card_2 img {
+    margin: auto;
+    display: block;
+    border: 1px solid black;
+    height: 800px;
+}
+.design_principle_card_3 img {
+    margin: auto;
+    display: block;
+    border: 1px solid black;
+    height: 800px;
+}
+#proximity {
+    grid-row: 2/3;
+}
+#alignment {
+    grid-row: 3/4;
+}
+#contrast {
+    grid-row: 4/5;
+}
+.design_principle_card_1 h2{
+    text-align: center;
+}
+.design_principle_card_2 h2{
+    text-align: center;
+}
+.design_principle_card_3 h2{
+    text-align: center;
+}
+#design_main h1 {
+    grid-column: 1/4;
+    text-align: center;
+}
+
+
+/* Mid size*/
+/* Home Page */
+@media (min-width: 32.5em) {
+    #home_img {
+        display: inline;
+        float: right;
+        width: 300px;
+        margin: 20px;
+    }
+    
+    #home_name {
+        display: inline;
+        text-align: start;
+    }
+    
+    #home_nav {
+        min-height: 500px;
+        width: 100%;
+    }
+}
+
+/* Design Principles Page */
+@media (min-width: 600px) {
+    #design_main {
+        grid-template-columns: 1fr 1fr;
+        gap: 2em;
+    }
+    #design_main h1 {
+        grid-column: 1/2;
+    }
+    #proximity {
+        grid-column: 2/3;
+        grid-row: 1/2;
+        margin-bottom: 2em;
+    }
+    #alignment {
+        grid-column: 1/2;
+        grid-row: 2/3;
+        margin-bottom: 2em;
+    }
+    #contrast {
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+}
+
+/* Desktop size*/
+@media (min-width: 1000px) {
+    #design_main {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 2em;
+    }
+    #design_main h1 {
+        grid-column: 1/4;
+    }
+    #proximity {
+        grid-column: 2/3;
+        grid-row: 2/3;
+        margin-bottom: 2em;
+    }
+    #alignment {
+        grid-column: 1/2;
+        grid-row: 2/3;
+        margin-bottom: 2em;
+    }
+
+    #contrast {
+        grid-column: 3/4;
+        grid-row: 2/3;
+    }
 }
