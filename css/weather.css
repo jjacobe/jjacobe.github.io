@@ -1,0 +1,121 @@
+/* Weather */
+
+:root {
+    --primary-color: #80a1c1ff;
+    --secondary-color: #f1e0c5ff;
+    --accent1-color: #2f4e89ff;
+    --accent2-color: #ebebebff;  
+}
+
+#font1 {
+    font-family: "Inter", Arial, sans-serif;
+}
+
+#font2 {
+    font-family: "Open Sans", Arial, sans-serif;
+}
+
+h1,
+h2,
+h3,
+nav li {
+    font-family: "Inter", Arial, sans-serif;
+}
+
+p {
+    font-family: "Open Sans", Arial, sans-serif;
+}
+
+nav,
+footer,
+nav li a,
+nav li {
+    background-color: #80a1c1ff;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    list-style-type: none;
+}
+
+nav a:hover {
+    background-color: #2f4e89ff;
+    color: black;
+}
+
+nav a {
+    display: block;
+    transition: 0.4s;
+    font-size: 1.5em;
+}
+
+nav ul {
+    padding: 0;
+}
+
+body {
+    background-color: #f1e0c5ff;
+    margin: 0;
+}
+
+main {
+    background-color: #ebebebff;
+}
+
+main,
+footer {
+    padding: 1.5em;
+}
+
+nav,
+header {
+    padding: 0.5em;
+    text-align: center;
+}
+
+header img {
+    height: 100px;
+}
+
+#person_1, #person_2 {
+    max-height: 300px;
+}
+
+img {
+    max-width: 100%;
+}
+
+.colors {
+    width: 100%;
+    min-width: 350px;
+    margin: auto;
+    text-align: center;
+}
+.colors th {
+    background-color: rgb(23, 143, 212);
+}
+  .colors td{
+    width: 25%;
+    height: 3em;
+}
+  
+.primary {
+    background-color: var(--primary-color);
+}
+.secondary {
+    background-color: var(--secondary-color);
+}
+.accent1 {
+    background-color: var(--accent1-color);
+}
+.accent2{
+    background-color: var(--accent2-color);
+}
+
+@media (min-width: 700px) {
+    nav ul {
+        display: flex;
+    }
+    nav ul li {
+        flex: 1 1 100%;
+    }
+}
