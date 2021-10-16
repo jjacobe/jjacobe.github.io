@@ -1,0 +1,143 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preston, ID | Forecast Vibes</title>
+    <link rel="shortcut icon" href="/lesson5/images/logo_icon.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/lesson5/css/preston.css">
+</head>
+<body>
+    <div id="wrapper">
+        <aside id="banner">
+            <p>Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.</p>
+        </aside>
+        <noscript>JavaScript needs to be enabled to enhance the features of this page.</noscript>
+        <header>
+            <img src="/lesson5/images/Forecast_Vibes-removebg-preview.png" alt="website logo">
+            <div id="siteName">
+                <h1>Forecast Vibes</h1>
+                <p>Catch The Sun</p>
+            </div>
+        </header>
+        <nav>
+            <button onclick="toggleMenu()">&#9776; Menu</button>
+            <ul id="primaryNav" class="hide">
+                <li><a href="../index.html">Home</a></li>
+                <li><a class = "active" href="#">Preston</a></li>
+                <li><a href="#">Soda Springs</a></li>
+                <li><a href="#">Fish Haven</a></li>
+                <li><a href="#">Storm Center</a></li>
+                <li><a href="#">Gallery</a></li>
+            </ul>
+        </nav>
+        <h1 id="pageHeader">Preston, Idaho</h1>
+        <section id="summaryContainer">
+            <img id= "heroImage" src="/lesson5/images/hero_image.jpg" alt="Downtown Preston Idaho">
+            <div id="weatherSummary">
+                <h2>Weather Summary</h2>
+                <div class="grid">
+                    <ul id="labels">
+                        <li>Current:</li>
+                        <li>High:</li>
+                        <li>Low:</li>
+                        <li>Humidity:</li>
+                        <li>Wind Speed:</li>
+                    </ul>
+                    <ul id="values">
+                        <li>Sunny</li>
+                        <li>75 &#8457;</li>
+                        <li>40 &#8457;</li>
+                        <li>50%</li>
+                        <li>5 mph</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section id="forecast">
+
+            <h2>5 Day Forecast</h2>
+            <table>
+                <tr>
+                    <th>Tues</th>
+                    <th>Wed</th>
+                    <th>Thurs</th>
+                    <th>Fri</th>
+                    <th>Sat</th>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="/lesson5/images/sun_icon.png" alt="Sun icon">
+                        <p>80&#8457;</p> 
+                    </td>
+                    <td>
+                        <img src="/lesson5/images/sun_icon.png" alt="Sun icon">
+                        <p>82&#8457;</p> 
+                    </td>
+                    <td>
+                        <img src="/lesson5/images/overcast_icon.png" alt="Overcast icon">
+                        <p>78&#8457;</p> 
+                    </td>                        
+                    <td>
+                        <img src="/lesson5/images/sun_icon.png" alt="Sun icon">
+                        <p>85&#8457;</p> 
+                    </td>                        
+                    <td>
+                        <img src="/lesson5/images/sun_icon.png" alt="Sun icon">
+                        <p>83&#8457;</p> 
+                    </td>                    
+                </tr>
+            </table>
+
+        </section>
+        <hr>
+        <article id="articleContainer">
+            <img src="/lesson5/images/placeholder.jpg" alt="Placeholder image">
+            <h2>Article Title</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. In, sunt. Placeat sed dolore est dolores quis similique,
+                necessitatibus magni. Necessitatibus quasi inventore ipsa alias, sunt suscipit unde accusamus nam! Expedita, totam natus
+                dolore architecto officia molestias voluptatem cum iure. Commodi quos rerum nam asperiores doloribus eligendi officia
+                necessitatibus vel dignissimos, alias quae consequatur ipsa explicabo labore perspiciatis? Reprehenderit quod
+                repellendus distinctio labore assumenda omnis eius aperiam aliquam possimus. Voluptatibus in dignissimos numquam totam
+                molestiae laboriosam a excepturi. Beatae praesentium cupiditate labore quam adipisci odio minima ullam minus dolores
+                quae commodi aut voluptate perspiciatis, hic distinctio! Odit, dolorum quis. Ipsa ullam voluptatem molestiae unde nemo
+                atque mollitia sunt cum excepturi omnis illum neque voluptas voluptates at autem perspiciatis ratione officiis maiores,
+                necessitatibus repellendus! Sed, possimus. Molestias inventore, accusantium totam, nulla veniam minima quas esse omnis
+                asperiores cupiditate amet! Atque iusto molestiae officiis tempore dicta, quasi aliquid dolorum unde, dolorem voluptatem
+                ipsum!
+            </p>
+
+        </article>
+    </main>
+
+    <footer>
+        <section id="footer">
+            <div id="contactInfo">
+                <h2>Contact Information</h2>
+                <p>&#128231; forecastvibes@forecastvibes.io</p>
+                <p>&#9742; (123)-456-7890</p>
+                <div id="iconBar">
+                    <a href="https://www.facebook.com/" target="_blank"><img src="/lesson5/images/facebook_logo.png" alt="Facebook icon"></a>
+                    <a href="https://www.instagram.com/" target="_blank"><img src="/lesson5/images/instagram_logo.png" alt="Instagram icon"></a>
+                    <a href="https://twitter.com/" target="_blank"><img src="/lesson5/images/twitter_logo.png" alt="Twitter icon"></a>
+                </div>             
+            </div>                
+            <img id="prestonMap" src="/lesson5/images/preston_map.png" alt="Map of Preston">
+        </section>
+        <div id="footerBar">
+            <p>
+                &copy;
+                <span id="copyrightYear"></span> Forecast Vibes |
+                <a href=" https://developer.mozilla.org/en-US" target="_blank">MDN Documentation Site</a> | BYU-Idaho | Last updated:
+                <span id="dateLastModified"></span>
+            </p>
+        </div>
+    </footer>
+    </div>
+    <script src="/lesson5/js/preston.js"></script>
+</body>
+</html>
