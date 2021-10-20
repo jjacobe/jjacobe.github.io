@@ -46,5 +46,5 @@ function createBanner(day) {
         document.querySelector("#banner").style.display = "block";
     }
 }
-
+var bannerDay = new Date().getDay();
 createBanner(day);
