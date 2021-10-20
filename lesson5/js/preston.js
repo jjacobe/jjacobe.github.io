@@ -1,46 +1,30 @@
-
-// Function for toggling navigation menu.
+//General
+// Toggle nav menu
 function toggleMenu() {
-    document.getElementById("primaryNav").classList.toggle("hide")
+    document.getElementById("navBar").classList.toggle("hide")
 }
 // Create formating for last updated information
-var weekday = new Array(
-    "Sunday", 
-    "Monday", 
-    "Tuesday", 
-    "Wednesday",
-    "Thursday", 
-    "Friday", 
-    "Saturday"
+var weekdays = new Array(
+    "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"
     );
 var months = new Array(
-    "January", 
-    "February", 
-    "March",
-    "April", 
-    "May", 
-    "June", 
-    "July", 
-    "August", 
-    "September",
-    "October", 
-    "November", 
-    "December"
+    "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"
     );
 const year = new Date().getFullYear();
 const lastModified = new Date(document.lastModified);
 var day = lastModified.getDay();
-var day = weekday[day];
+var day = weekdays[day];
 var month = lastModified.getMonth();
 var month = months[month];
 
 var lastModifiedFormatted = day + ', ' + lastModified.getDate() + ' ' + month + " " + lastModified.getFullYear();
 
-// Display copyright year and date last modified to footer of HTML document.
-document.getElementById("dateLastModified").textContent = lastModifiedFormatted;
+// Display copyright year and date last modified
 document.getElementById("copyrightYear").textContent = year;
+document.getElementById("dateLastModified").textContent = lastModifiedFormatted;
 
-// Make banner appear only on fridays //
+
+// Friday pancake banner
 function createBanner(day) {
     if (day == "Friday") {
         document.querySelector("#banner").style.display = "block";
