@@ -2,213 +2,177 @@
 #font1 {
     font-family: "Inter", Arial, sans-serif;
 }
-
 #font2 {
     font-family: "Open Sans", Arial, sans-serif;
 }
-
-h1,
-h2,
-h3,
-nav li {
-    font-family: "Inter", Arial, sans-serif;
-    text-align: center;
-}
-
-p, li {
-    font-family: "Open Sans", Arial, sans-serif;
-}
-
-nav,
-footer,
-nav li a,
-nav li {
-    background-color: #2f4e89ff;
-    color: black;
-    text-decoration: none;
-    text-align: center;
-    list-style-type: none;
-}
-
-nav a:hover {
+#pancake {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: .5em;
     background-color: #f1e0c5ff;
     color: black;
+    font-family:'Inter', Arial, sans-serif;
+    text-align: center;
 }
-
-.active {
-    font-weight: bold;
-    text-decoration: underline;
-    color: black;
-}
-
-nav ul {
-    position: relative;
-    padding: 0;
-}
-
-nav li a{
-    position: static;
-    border: 1px solid #2f4e89ff;
-    margin: 10px 0px 10px;
-    padding: 5px 0px 5px;    
-    display: block;
-    transition: 0.5s;
-    font-size: 1.5em;
-    color: white;
-
-}
-
 body {
-    background-color: #80a1c1ff;
-    margin: 0;
+    background-color:#80a1c1ff; 
 }
-
 main {
-    background-color: #80a1c1ff;
+    margin: 0.5em;
+    padding: 0.5rem;
+    background-color:#80a1c1ff;
 }
-
-main,
-footer {
-    padding: 1.5em;
-}
-
-footer a {
-    color: white;
-}
-
-nav,
 header {
-    padding: 0.5em;
-    color: black;
+        text-align: center;
+        background-color:#80a1c1ff;
+        font-family:'Inter', Arial, sans-serif;
+        max-width: 100%;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        display: flex;
+        margin-top: 4%;
 }
-
 header img {
-    height: 100px;
-    display: inline;
-    padding-left: 15px;
+        width: 80px;
+        height: auto;
+        padding: 0.5rem;
+        margin: 0;
+        display: inline;
 }
-
-#siteName {
-    padding-top: 15px;
-    padding-left: 15px;
-}
-#siteName h1, #siteName p {
-    margin: 5px 0px 5px;
-}
-header {
+img {            
+	max-width: 65%;
+    max-height: 100%;
     display: flex;
 }
-
-img {
-    max-width: 100%;
+.prestonMap{
+    max-width: 33%;
+    padding-left: 150px;
+}
+h1 {
+    font-size: 2rem;
+    margin: auto;
+    color:black;
+    font-family:'Inter', Arial, sans-serif;
+    margin-top: 4%;
+    text-align: center;
+}
+h2, h3, h4 {
+    font-family:'Open Sans', Arial, sans-serif;
+    color:black;
+    text-align: center;
+}
+p {
+        color:black;
+        font-size: 1rem;
+        font-family:'Open Sans', Arial, sans-serif;
+        text-align: center;
+}
+a {
+    color:black;
+    font-size: 1.3rem;
+    font-family:'Open Sans', Arial, sans-serif;
+    text-decoration: none;
+    text-align: center;   
 }
 button {
+    background-color:#2f4e89ff;
+    font-family:'Inter', Arial, sans-serif;
+    font-size: 1rem;
     display: block;
-    height: 10px;
-    font-family: "Inter", Arial, sans-serif;
-    font-size: 1.5em;
-    border: 1px solid #2f4e89ff;
-    background-color: #2f4e89ff;
-    color: #ebebebff;
     transition: 0.5s;
     height: 50px;
     width: 100%;
+}
+nav {
+	background-color:#2f4e89ff;
+    font-size: 1rem;
+	text-align: center;
+    max-width: 100%;
+}
+nav ul.navigation {
+    display:flex;
+}
+.active {
+    background-color:#f1e0c5ff;
+    font-weight: bold;
+    text-decoration: underline;
+}
+nav ul li a {
+    color:black;
+	display: grid;
+	text-align: center;
+	padding: 0.75rem;
+	text-decoration: none;
+	font-size: 0.95rem;
+    font-family: 'Inter', Arial, sans-serif;
+    list-style: none;
+}
+nav a:hover {
+    background-color: #f1e0c5ff;
+    color: black;
 }
 button:hover {
     background-color: #f1e0c5ff;
     color: black;
 }
-nav ul.hide {
+nav ul {
+    position: relative;
+    padding: 0;
+    margin: 0;
+}
+ul {
+    list-style-type: none;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+main,
+footer {
+    padding: 1.5em;
+}
+nav ul.navigation {
     display: none;
 }
-
-section {
-    background-color: #2f4e89ff;
-    border: 5px solid #80a1c1ff;
+.heroBox {
+    background-color:#f1e0c5ff;
     margin: 5px;
+    width: auto;
+    height: auto;
 }
-
-/* Noscript style rules */
-
-noscript {
-    margin: 1rem;
-    background-color: blue;
-    color: white;
-    width: 100%;
+.heroImg {
+    max-width: 100%;
+    max-height: 100%;
+    margin: 25px auto;
 }
-
-/* Banner style rules */
-
-#banner {
-    display: none;
-    text-align: center;
-    background-color: #f1e0c5ff;
-    padding: .75rem;
-}
-
-
-
-/* Weather summary style rules */
-
-#pageHeader {
-    padding: 1rem;
-}
-
-#summaryContainer {
+.weatherBox {
     position: relative;
     width: 100%;
     margin: 0;
     background-color: #f1e0c5ff;
-    margin-bottom: -9px;
 }
-
-#weatherSummary {
+.weatherBox {
+    margin-bottom: -9px;
     padding: 1rem;
     width: 225px;
     height: 225px;
 }
-
-#weatherSummary ul{
+.weatherBox ul{
     list-style-type: none
 }
-
-#weatherSummary h2{
+.weatherBox h2{
     text-decoration: underline;
 }
 
-#heroImage {
-    display: block;
-    height: 350px;
-    width: 100%;
-    margin: 0 auto;
-}
-
-.grid {
+.boxes {
     display: grid;
     grid-template-columns: 1fr 1fr;
-
-
-}
-
-#labels {
-    text-align: end;
-    padding: 0;
-}
-#values {
-    padding-left: 10px;
-}
-
-/* 5 day forecast style rules */
-#forecast {
-    padding: 1.5rem;
-    display: none;
 }
 table {
     margin: 0 auto;
     width: 90%;
-    background-color: #80a1c1ff;
+    background-color: #2f4e89ff;
 }
-
 table, th, td {
     border: 1px solid black;
     font-family: "Inter", Arial, sans-serif;
@@ -221,50 +185,39 @@ td {
     padding-top: 10px;
     text-align: center;
     font-size: 1.25rem;
-    background-color: white;
+    background-color: #f1e0c5ff;
 }
-
-/* Article style rules */
-#articleContainer {
+.articleBox {
     padding: 1.5rem;
 }
-
-#articleContainer img {
+.articleBox img {
     display: block;
     margin: 0 auto;
     height: 300px;
     width: 100%;
     max-width: 500px;
 }
-
-/* Contact information and footer bar style rules */
-
-#contactInfo {
+.contact {
     padding: 0.5rem 0 0.5rem 1.5rem;
     text-align: start;
     background-color: #2f4e89ff;
     color: white;
 }
-
-#prestonMap {
+.prestonMap {
     display: block;
     height: 250px;
     width: 90%;
     margin: 0 auto;
-    background-color: #2f4e89ff;
     padding: 1rem;
 }
-
 footer {
-    background-color: #2f4e89ff;
+    padding: 1rem;
+    text-align:center;
+    margin: 0.5rem;
+    max-width: 100%;
 }
 
-#footerBar {
-    padding: .5rem;
-    background-color: #2f4e89ff;
-}
-
-#iconBar img{
+#social img{
     padding-right: 0.75rem;
 }
 
@@ -275,7 +228,7 @@ footer {
     }
 
 
-    #weatherSummary {
+    .weatherBox {
         position: absolute;
         background-color: #f1e0c5ff;
         height: 225px;
@@ -285,31 +238,27 @@ footer {
         left: 5%;
     }
 
-    #weatherSummary h2, #weatherSummary li {
+    .weatherBox h2, .weatherBox li {
         opacity: 100%;
     }
 
-    #forecast {
-        display: block;
-    }
-
-    #articleContainer img {
+    .articleBox img {
         float: right;
         width: 400px;
         padding: 1rem;
     }
 
-    #footer {
+    footer {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 0;
     }
     
-    #prestonMap {
+    .prestonMap {
         grid-column: 1/2;
         max-width: 500px;
     }
-    #contactInfo {
+    .contact {
             grid-column: 2/3;
         }
 
@@ -327,7 +276,94 @@ footer {
     button {
         display: none;
     }
-    nav ul.hide {
+    nav ul.navigation {
         display: flex;
+    }
+}
+/*medium*/
+@media only screen and (min-width: 36em) {
+    header {
+        text-align: center;
+}
+    nav ul, nav ul.navigation {
+        display: flex;
+}
+    nav ul li {
+        flex: 1 1 100%;
+}
+    nav button {
+        display: none;
+}
+    .heroImg {
+        margin: 10px auto;
+        position: relative;
+}
+    .heroBox {
+        position: relative;
+        margin: 10px auto;
+        width: auto;
+}
+   .weatherBox{
+        position: absolute;
+        margin-top: 20px;
+        margin-left: 20px;
+        margin-right: 20px;  
+}
+    .articleBox {
+        padding-left: 8rem;
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        border: 5px solid #f1e0c5ff;
+}
+   .prestonMap{
+    display:block;
+    float: left;
+    margin-top: 10px;
+}
+   .contact{
+   margin: 10px;
+   padding: 10px;
+   justify-content: right;
+   text-align: center; 
+   border: 5px solid black;
+}
+   .social{
+   display: flex;
+   align-items:center;
+   justify-content: center;
+    }
+}
+/*large*/
+@media only screen and (min-width: 64em) {
+    main {
+        margin: 0 auto;
+        max-width: 960px;
+    }
+    header {
+        max-width: 100%;
+        justify-items: center;
+        justify-content: center;
+        display: flex;
+        text-align: center;
+        margin-top: auto;
+    }
+    h2 {
+        text-align: center;
+    } 
+    nav {
+        max-width: 100%;
+    }
+    nav ul {
+        display: flex;
+    }
+    nav ul li {
+        flex: 1 1 100%;
+    }
+    nav button{
+        display:none;
+    }
+    footer{
+        margin: 0 auto;
+        max-width: 1050px;
     }
 }
